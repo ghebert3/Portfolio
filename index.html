@@ -8,33 +8,69 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Gerald Hebert</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <nav id="desktop-nav">
+  <div class="logo">Gerald Hebert</div>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  <label class="theme-switch" aria-label="Toggle dark mode">
+  <input
+    id="themeSwitchDesktop"
+    type="checkbox"
+    onchange="toggleThemeFromSwitch(this.checked)"
+  />
+
+  <span class="slider">
+    <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 1 0 9.8 9.8z"/>
+      <path d="M17 6l1-2 1 2 2 1-2 1-1 2-1-2-2-1z"/>
+    </svg>
+
+    <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="5"/>
+      <g>
+        <line x1="12" y1="1" x2="12" y2="4"/>
+        <line x1="12" y1="20" x2="12" y2="23"/>
+        <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
+        <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
+        <line x1="1" y1="12" x2="4" y2="12"/>
+        <line x1="20" y1="12" x2="23" y2="12"/>
+        <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
+        <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
+      </g>
+    </svg>
+  </span>
+</label>
+
+  </button>
+</nav>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Gerald Hebert</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+        <div class="nav-right">
+    </button>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </div>
+</nav>
     <section id="profile">
         <div class="section__pic-container">
         <img src="assets/me.png" alt="Gerald Hebert profile picture"  />
